@@ -11,9 +11,101 @@
     </header>
 
     <main>
-        <section>
-            <h2>Sobre</h2>
-            <p>Esta é uma página inicial criada com HTML5.</p>
+        <section id="introducao">
+            <h2>Introdução ao HTML5</h2>
+            <p>HTML5 é a versão mais recente da linguagem de marcação HTML. Ela traz novos elementos semânticos, APIs e recursos multimídia.</p>
+        </section>
+
+        <section id="elementos-semanticos">
+            <h2>Elementos Semânticos</h2>
+            <p>HTML5 introduziu vários elementos semânticos que descrevem melhor o conteúdo:</p>
+            <ul>
+                <li><strong>&lt;header&gt;</strong> - Cabeçalho da página ou seção</li>
+                <li><strong>&lt;nav&gt;</strong> - Navegação principal</li>
+                <li><strong>&lt;main&gt;</strong> - Conteúdo principal</li>
+                <li><strong>&lt;article&gt;</strong> - Conteúdo independente</li>
+                <li><strong>&lt;section&gt;</strong> - Seção temática</li>
+                <li><strong>&lt;aside&gt;</strong> - Conteúdo relacionado</li>
+                <li><strong>&lt;footer&gt;</strong> - Rodapé da página ou seção</li>
+            </ul>
+        </section>
+
+        <section id="formularios">
+            <h2>Formulários HTML5</h2>
+            <p>Novos tipos de input e atributos facilitam a validação:</p>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data">
+                <br><br>
+
+                <label for="numero">Número (1-10):</label>
+                <input type="number" id="numero" name="numero" min="1" max="10">
+                <br><br>
+
+                <label for="cor">Cor:</label>
+                <input type="color" id="cor" name="cor">
+                <br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="multimidia">
+            <h2>Multimídia</h2>
+            <p>HTML5 permite incorporar áudio e vídeo nativamente:</p>
+
+            <h3>Vídeo</h3>
+            <video width="320" height="240" controls>
+                <source src="video.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+
+            <h3>Áudio</h3>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+        </section>
+
+        <section id="tabelas">
+            <h2>Tabelas</h2>
+            <p>Exemplo de tabela HTML:</p>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;div&gt;</td>
+                        <td>Divisão genérica</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;span&gt;</td>
+                        <td>Elemento inline genérico</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;p&gt;</td>
+                        <td>Parágrafo</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="links">
+            <h2>Links e Navegação</h2>
+            <p>Exemplos de links:</p>
+            <nav>
+                <a href="#introducao">Ir para Introdução</a> |
+                <a href="#elementos-semanticos">Elementos Semânticos</a> |
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">MDN Web Docs</a>
+            </nav>
         </section>
     </main>
 
